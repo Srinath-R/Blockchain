@@ -5,6 +5,8 @@ A simple Blockchain implementation in Javascript.
 * Simple proof-of-work algorithm
 * Verify blockchain (to prevent tampering)
 * Mining rewards and transactions
+* Sign transactions
+* Generate wallet (private/public key)
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
