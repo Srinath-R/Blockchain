@@ -309,7 +309,7 @@ class Blockchain
         for (let i = 1; i < this.chain.length; i++)
         {
             const currentBlock=this.chain[i];
-            //const previousBlock=this.chain[i-1];
+            const previousBlock=this.chain[i-1];
 
             if (!currentBlock.hasValidTransactions())
             {
@@ -321,10 +321,10 @@ class Blockchain
                 return false;
             }
 
-            // if (currentBlock.previousHash!==previousBlock.hash)
-            // {
-            //     return false;
-            // }
+            if (currentBlock.previousHash!==previousBlock.hash)
+            {
+                return false;
+            }
         }
 
         return true;
